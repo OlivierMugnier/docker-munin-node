@@ -2,7 +2,7 @@ FROM ubuntu:xenial-20181218
 
 # munin 2.0.55
 RUN apt-get update -y && \
-      apt-get install -y munin-node munin-async telnet mtr wget dnsutils && \
+      apt-get install -y munin-node munin-plugins munin-plugins-extra munin-async telnet mtr wget dnsutils && \
       apt-get clean && \
       rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
