@@ -13,3 +13,5 @@ RUN ln -s /usr/share/munin/plugins/cpu_by_process /etc/munin/plugins/cpu_by_proc
 ADD bootstrap.sh /root/bootstrap.sh
 
 CMD /root/bootstrap.sh
+
+EXPORT 4949/TCP
